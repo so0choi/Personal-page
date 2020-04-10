@@ -362,13 +362,13 @@ nav ul li a {
   height:1rem;
   overflow:hidden;
   font-size:.75rem;
-  background-color: #e9ecef;
+  background-color: #b2b289;
   border-radius:.25rem;
 }
 
 #resume .skill-mf .progress .progress-bar {
   height:.7rem;
-  background-color:#beb289;
+  background-color:#f3ecdc;
 }
 
 .progress-bar{
