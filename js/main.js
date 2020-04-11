@@ -67,7 +67,11 @@ $(document).ready(function() {
   //  // RESPONSIVE MENU
   // ========================================================================= //
 
-  $('.responsive').on('click', function(e) {
+  $('.responsive').on('mouseover', function(e) {
+    $('.nav-menu').slideToggle();
+  });
+
+  $('.responsive').on('mouseout', function(e) {
     $('.nav-menu').slideToggle();
   });
 
@@ -144,8 +148,10 @@ $(window).load(function(){
 
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-thumbnail',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    filter:'.project'
   });
+
 
   $('#portfolio-flters li').on( 'click', function() {
     $("#portfolio-flters li").removeClass('filter-active');
@@ -155,3 +161,16 @@ $(window).load(function(){
   });
 
 })
+//====================================================//
+//Send Email
+//================================================
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // generate the contact number value
+      emailjs.sendForm('sygmail', 'template_jIa28Sjr', this);
+      $("#sendmessage").addClass("show");
+      $("#errormessage").removeClass("show");
+      $('.contactForm').find("input, textarea").val("");
+  });
+}

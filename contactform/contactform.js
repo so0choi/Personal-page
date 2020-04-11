@@ -11,7 +11,6 @@ jQuery(document).ready(function($) {
 
       var i = $(this); // current input
       var rule = i.attr('data-rule');
-
       if (rule !== undefined) {
         var ierror = false; // error flag for current input
         var pos = rule.indexOf(':', 0);
@@ -89,30 +88,46 @@ jQuery(document).ready(function($) {
       }
     });
     if (ferror) return false;
-    else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-    }
-    $.ajax({
-      type: "POST",
-      url: action,
-      data: str,
-      success: function(msg) {
-        // alert(msg);
-        if (msg == 'OK') {
+    // else var str = $(this).serialize();
+    
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+        
+          emailjs.sendForm('sygmail', 'template_jIa28Sjr', this);
+
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
+      });
+    }
 
-      }
-    });
-    return false;
+
+    // var action = $(this).attr('action');
+    
+    // if( ! action ) {
+    //   action = 'contactform/contactform.php';
+    // }
+
+    // $.ajax({
+    //   type: "POST",
+    //   url: 'contactform/contactform.php',
+    //   data: str,
+    //   success: function(msg) {
+    //     // alert(msg);
+    //     if (msg == 'OK') {
+    //       $("#sendmessage").addClass("show");
+    //       $("#errormessage").removeClass("show");
+    //       $('.contactForm').find("input, textarea").val("");
+    //     } else {
+    //       $("#sendmessage").removeClass("show");
+    //       $("#errormessage").addClass("show");
+    //       $('#errormessage').html(msg);
+    //     }
+
+    //   }
+    // });
+    // return false;
   });
 
 });

@@ -11,8 +11,8 @@
 
 body {
   background: #ffffff;
-  color: #898989;
-  font-family: 'Poppins', helvetica;
+  color: #000000;
+  font-family: -apple-system, helvetica;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -32,8 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #3b3b3b;
   font-weight: 600;
+  margin-bottom:10px;
+  border-bottom:1px solid rgb(172, 170, 170);
+  padding-bottom:10px;
+  
 }
 
 h4 {
@@ -61,7 +65,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color: #53ffd4;
   text-decoration: underline;
 }
 
@@ -83,20 +87,21 @@ nav ul li a {
 }
 
 p {
+  cursor: default;
   margin: 25px 0;
   padding: 0;
   font-size: 15px;
-  color: #999999;
+  color: #3b3a3a;
   line-height: 28px;
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background:#53ffd4;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #54d6fd;
   color: #fff;
 }
 
@@ -120,14 +125,14 @@ p {
   padding: 30px 20px;
 }
 
-.section-title {
-  margin-bottom: 70px;
-}
+
 
 .section-title h2 {
   font-size: 25px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-family:-apple-system, helvetica;;
+  color:black;
 }
 
 .form-control {
@@ -142,7 +147,6 @@ p {
   padding-left: 10px;
   margin: 0 0 25px 0;
   line-height: 14px;
-  text-transform: uppercase;
 }
 
 .form-control:focus {
@@ -151,7 +155,7 @@ p {
 }
 
 .paddsection {
-  padding-top: 90px;
+  padding-top: 30px;
   padding-bottom: 90px;
 }
 
@@ -183,9 +187,9 @@ nav {
   width: 100%;
   padding: 20px;
   display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.18);
 }
 
 .nav-menu {
@@ -198,7 +202,7 @@ nav {
 nav ul li {
   float: left;
   margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: -apple-system, helvetica;
   font-size: 14px;
   margin-left: 40px;
 }
@@ -209,7 +213,7 @@ nav ul li a {
   display: block;
   font-size: 14px;
   color: #999999;
-  font-family: 'Poppins', helvetica;
+  font-family:-apple-system, helvetica;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
@@ -229,6 +233,7 @@ nav ul li a {
 .responsive {
   display: none;
   font-size: 23px;
+  cursor: pointer;
 }
 
 .active {
@@ -284,34 +289,29 @@ nav ul li a {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  Aout-us
+/*  About-section
 /*-----------------------------------------------------------------------------------*/
 
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
   padding-top: 190px;
-}
-
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #9795ad;
 }
 
 #about .div-img-bg .about-img img {
   width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
   margin-left: 40px;
-  height: 400px;
+  height: 350px;
   object-fit: cover;
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: -apple-system, helvetica;
   font-size: 28px;
   text-align: left;
+  font-weight: 600;
 }
 
 #about .about-descr .separator {
@@ -326,11 +326,10 @@ nav ul li a {
 #resume {
   width: 100%;
   height: auto;
-  background: #ffffff;
-  padding-top: 190px;
+  padding-top: 90px;
 }
+
 #resume .career-descr-l .p-heading{
-  font-family: 'Playfair Display', serif;
   font-size: 25px;
   text-align: left;
 }
@@ -350,7 +349,7 @@ nav ul li a {
 }
 
 #resume .skill-mf .progress{
-  background-color: #f3ecdc;
+  background-color: rgb(229, 233, 235);
   margin:.5rem 0 1.2rem 0;
   border-radius:0;
   height:.7rem;
@@ -362,13 +361,13 @@ nav ul li a {
   height:1rem;
   overflow:hidden;
   font-size:.75rem;
-  background-color: #b2b289;
+  background-color: rgb(116, 119, 116);
   border-radius:.25rem;
 }
 
 #resume .skill-mf .progress .progress-bar {
   height:.7rem;
-  background-color:#f3ecdc;
+  background-color:rgb(116, 119, 116);
 }
 
 .progress-bar{
@@ -376,12 +375,12 @@ nav ul li a {
   transition:none;
   flex-direction:column;
   justify-content:center;
-  color:#fff;
+  color:rgb(116, 119, 116);
   text-align:center;
   white-space: nowrap;
 }
 #resume .career-descr-r .p-heading{
-  font-family: 'Playfair Display', serif;
+  font-family: -apple-system, helvetica;
   font-size: 25px;
   text-align: left;
 }
@@ -398,26 +397,30 @@ nav ul li a {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
-  background:#f7f7f7;
+  background:white;
 }
 
 #portfolio .portfolio-list {
-  margin-bottom: 50px;
+  margin-bottom: 17px;
 }
 
 #portfolio .portfolio-list .nav {
   display: inline-block;
   margin: 0;
 }
-
+#portfolio #project-desc{
+  margin-bottom: 30px;
+  color:#3b3b3b;
+  cursor: default;
+}
 #portfolio .portfolio-list .nav li {
   margin: 0 40px 0 0;
   float: left;
-  font-size: 14px;
-  color: #614f4f;
+  margin-top:10px;
+  font-size: 16px;
   line-height: 16px;
   cursor: pointer;
-  font-family: 'Poppins', helvetica;
+  font-family: -apple-system, helvetica;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -429,7 +432,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #b8a07e;
+  color: #979797;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -439,9 +442,36 @@ nav ul li a {
 
 #portfolio .portfolio-container {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 100%;
 }
+
+.portfolio-title{
+  margin-top:10px;
+  font-weight:600;
+  display:block;
+}
+.portfolio-container img{
+  width: auto; height: auto;
+    max-width: 280px;
+    max-height: 200px;
+
+}
+.portfolio-description{
+  margin-top:10px;
+  text-align:left;
+  font-size:13px;
+}
+.portfolio-description ul{
+  margin-top:10px;padding-left:15px;
+  margin-bottom:3px;
+}
+.portfolio-description li{
+  list-style-type: circle;
+
+}
+
+
 
 .portfolio-thumbnail {
   margin-bottom: 30px;
@@ -479,10 +509,13 @@ nav ul li a {
 
 #journal .journal-block .journal-info {
   position: relative;
+  margin-top:30px;
 }
 
 .journal-block .journal-info img {
-  max-width: 100%;
+  width: auto; height: auto;
+    max-width: 380px;
+    max-height: 200px;
 }
 
 .journal-block .journal-info .journal-txt {

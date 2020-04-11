@@ -31,6 +31,12 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_pLlellBX5sCfIIejpxfLz");
+   })();
+</script>
   <!-- =======================================================
     Theme Name: Folio
     Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
@@ -51,7 +57,6 @@
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
         <ul class="nav-menu list-unstyled">
           <li><a href="#header" class="smoothScroll">Home</a></li>
           <li><a href="#about" class="smoothScroll">About</a></li>
@@ -102,8 +107,8 @@
         <div class="col-lg-7">
           <div class="about-descr">
 
-            <p class="p-heading">I'm Soyeong Choi,  </p>
-            <p class="separator">  Currently a university student in KOR who is majoring in Software Engineering. I want to be a professional web application deverloper and also interested in Machine Learning and Database. Studying Cloud Computing these days. I love traveling. love to taking photos.<br> I would say im easy-going, ambitious and language friendly. Many of friends of mine told me im a friend who always say 'ok'. I cant let myself not knowing about any field, so always am eager to learn new things. another thing that I am proud of myself is being a easy language learner.  </p>
+            <p class="p-heading">About Soyeong Choi </p>
+            <p class="separator">&nbsp Currently a university student in KOR who is majoring in Software Engineering. I want to be a professional server deverloper and also interested in Machine Learning and Database. Studying Cloud Computing these days. I love traveling. love to taking photos.<br><br>&nbsp I would say im easy-going, ambitious and language friendly. Many of friends of mine told me im a friend who always say 'ok'. I cant let myself not knowing about any field, so always am eager to learn new things. another thing that I am proud of myself is being a easy language learner.  </p>
           </div>
 
         </div>
@@ -111,13 +116,13 @@
     </div>
   </div>
   <!-- end section about us -->
-  
+  <hr>
   <!-- start section resume-->
 
   <div id="resume" class="text-center paddsection">
     <div class="container">
       <div class="section-title text-center">
-        <h2>About</h2>
+        <h2>Education & Skill</h2>
       </div>
       <div class="row">
         <div class="col-md-6">
@@ -224,68 +229,96 @@
   </div>
   <!-- end section resume -->
 
-
+<hr>
   <!-- start section portfolio -->
   <div id="portfolio" class="text-center paddsection">
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>TRAVEL</h2>
+        <h2>WORKS</h2>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-
           <div class="portfolio-list">
             <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".Asia">Asia</li>
-              <li class="filter" data-filter=".North America">North America</li>
-              <li class="filter" data-filter=".South America">South America</li>
-              <li class="filter" data-filter=".Europe">Europe</li>
-              <li class="filter" data-filter=".Africa">Africa</li>
+              <li class="filter filter-active" data-filter=".project">Project</li>
+              <li class="filter" data-filter=".tool">Tool</li>
+              <li class="filter" data-filter=".travel">Travel</li>
             </ul>
-
           </div>
-
+          <div id="project-desc"class="project">Each title is connected to my github link!</div>
           <div class="portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Asia Europe">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/1.jpg" alt="img">
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail project">
+              <a class="popup-img" href="images/portfolio/guestbook.PNG" target="_blank"><img src="images/portfolio/guestbook.PNG" alt="img">
               </a>
+              <a class="portfolio-title" href="https://github.com/i-msy/Guestbook" target="_blank">
+                Guestbook Webpage
+              </a>
+              <div class="portfolio-description">
+                Simple guestbook webpage, Eclipse maeven project practicing spring framework<br>
+                <ul>
+                  <li>Spring frmaework4.3.5</li>
+                  <li>My SQL</li>
+                  <li>JAVA</li>
+                  <li>MVC Layered Structure</li>
+                </ul>
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all North America">
-              <a class="popup-img" href="images/portfolio/2.jpg">
-                <img src="images/portfolio/2.jpg"  alt="img">
-              </a>
-            </div>
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail project">
+                <a class="popup-img" href="images/portfolio/peepee.jpg" target="_blank">
+                  <img src="images/portfolio/peepee.jpg" alt="img">
+                </a>
+                <a class="portfolio-title" href="https://github.com/i-msy/peepee" target="_blank">PEE-PEE</a>
+                <div class="portfolio-description">
+                  A Web application, analyzing your pee's color by classifying it in 7 levels, using python 
+                  
+                  <ul>
+                    <li>Python3.8</li>
+                    <li>OpenCV</li>
+                    <li>sklearn</li>
+                    <li>Flask</li>
+                    <li>nginx</li>
+                  </ul>
+                  <a href="http://133.186.150.88/" target="_blank">Click Here !</a></div>
+              </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Asia">
-              <a class="popup-img" href="images/portfolio/3.jpg">
-                <img src="images/portfolio/3.jpg" alt="img">
-              </a>
-            </div>
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail project">
+                <a class="popup-img" href="images/portfolio/imgc.jpg" target="_blank"><img src="images/portfolio/imgc.jpg" alt="img">
+                </a>
+                <a class="portfolio-title" href="https://github.com/i-msy/ImageClassifier" target="_blank">
+                  Image Classifier
+                </a>
+                <div class="portfolio-description">
+                  A Python application which can find out duplicated photos<br>
+                  <ul>
+                    <li>Python 3.8 (Anaconda env)</li>
+                    <li>Pyqt5</li>
+                  </ul>
+                  </div>
+              </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Asia">
-              <a class="popup-img" href="images/portfolio/4.jpg">
-                <img src="images/portfolio/4.jpg" alt="img">
-              </a>
-            </div>
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail project">
+                <a class="popup-img" href="images/portfolio/todo.jpg" target="_blank">
+                  <img src="images/portfolio/todo.jpg" alt="img">
+                </a>
+                <a class="portfolio-title" href="https://github.com/i-msy/TodoList" target="_blank">Todo List</a>
+                <div class="portfolio-description">
+                  A Web application managing user's todolist 
+                  <ul>
+                    <li>Eclipse Java</li>
+                    <li>Servlet</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                  </ul>
+                  </div>
+              </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all North America">
-              <a class="popup-img" href="images/portfolio/5.jpg">
-                <img src="images/portfolio/5.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Asia">
-              <a class="popup-img" href="images/portfolio/6.jpg">
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail tool">
                 <img src="images/portfolio/6.jpg" alt="img">
-              </a>
             </div>
 
           </div>
@@ -296,8 +329,8 @@
   </div>
   <!-- End section portfolio -->
 
-
-  <!-- start section journal -->
+<hr>
+  <!-- start section blog -->
   <div id="journal" class="text-left paddsection">
 
     <div class="container">
@@ -329,11 +362,11 @@
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
 
-              <a href="https://studyeong.blogspot.com/search/label/딥러닝"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+              <a href="https://studyeong.blogspot.com/search/label/딥러닝" target="_blank"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
 
-                <h4><a href="https://studyeong.blogspot.com/search/label/딥러닝">DEEP LEARNING</a></h4>
+                <h4><a href="https://studyeong.blogspot.com/search/label/딥러닝" target="_blank">DEEP LEARNING</a></h4>
                 <p class="separator">Posts about Deep Learning using Docker and Jupiter Notebook
                 </p>
 
@@ -345,11 +378,11 @@
           <div class="col-lg-4 col-md-6">
             <div class="journal-info">
 
-              <a href="https://studyeong.blogspot.com/search/label/웹프로그래밍"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+              <a href="https://studyeong.blogspot.com/search/label/웹프로그래밍" target="_blank"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
 
               <div class="journal-txt">
 
-                <h4><a href="https://studyeong.blogspot.com/search/label/웹프로그래밍">Web Programming</a></h4>
+                <h4><a href="https://studyeong.blogspot.com/search/label/웹프로그래밍" target="_blank">Web Programming</a></h4>
                 <p class="separator">Posts about Web Programming study. using html5 & css & java script. including both frontend and backend
                 </p>
 
@@ -363,7 +396,7 @@
     </div>
 
   </div>
-  <!-- End section journal -->
+  <!-- End section blog -->
 
 
   <!-- start sectoion contact -->
@@ -380,15 +413,26 @@
               <ul class="contact-details">
                 <li><span>Dankook University, Software Engineering</span></li>
                 <li><span>KOR 1996.07.30</span></li>
-                <li><span>https://studyeong.blogspot.co</span></li>
                 <li><span>simc2644@gmail.com</span></li>
+                <li><a href="https://studyeong.blogspot.com" target="_blank">https://studyeong.blogspot.com</a></li>
+                <li><a href="https://github.com/i-msy" target="_blank">https://github.com/i-msy</a></li>
               </ul>
-
             </div>
           </div>
 
           <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
+            <!-- <form id="contact-form">
+              <input type="hidden" name="contact_number">
+              <label>Name</label>
+              <input type="text" name="from_name">
+              <label>Email</label>
+              <input type="email" name="user_email">
+              <label>Message</label>
+              <textarea name="message"></textarea>
+              <input type="submit" value="Send">
+          </form> -->
+
+            <form id="contact-form" method="post" role="form" class="contactForm">
               <div class="row">
 
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -396,14 +440,14 @@
 
                 <div class="col-lg-6">
                   <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                    <input type="text" name="user_name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
                     <div class="validation"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" class="form-control" name="user_email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validation"></div>
                   </div>
                 </div>
@@ -466,11 +510,10 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <!-- <script src="contactform/contactform.js"></script> -->
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
 </body>
 
 </html>
